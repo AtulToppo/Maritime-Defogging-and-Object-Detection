@@ -5,8 +5,13 @@ The system processes real-time video feeds to ensure safer navigation for vessel
 
 ## Why This Project Matters
 
-> - **Problem:** Poor visibility in maritime navigation can lead to accidents, collisions, and inefficient operations.
-> - **Solution:** This project mitigates these risks using advanced computer vision techniques to deliver clear visuals and detect potential hazards in real time.
+>### Problem
+
+In maritime navigation, poor visibility due to fog, haze, or low-light conditions significantly increases the risk of accidents, collisions, and operational inefficiencies. This lack of clarity hinders timely decision-making and compromises safety, especially in congested or hazardous waters.
+
+>### Solution
+
+This project addresses these challenges by leveraging advanced computer vision techniques, including image defogging and real-time object detection. By enhancing visual clarity and accurately identifying obstacles, the system improves situational awareness, ensuring safer and more efficient navigation in challenging maritime conditions.
 
 ## Why These Technologies?
 
@@ -39,10 +44,28 @@ The project utilizes a combination of cutting-edge tools and libraries to achiev
 - **Validation Images:** Around 1,000 (10%).
 
 **2.** Around 10,000 Annotated images were considered for Object Detection.
-- **Sources:**
+- **Sources:** [Seaships](https://universe.roboflow.com/marine-cv6x4/seaships-zhqhn/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true), [MARVEL](https://universe.roboflow.com/wilson_xu_weixuan-outlook-com/marvel-single/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true)
 - **Training Images:** Around 8,000 (80%).
 - **Training Labels:** Around 8,000 (80%).
 - **Validation Images:** Around 2,000 (20%).
 - **Validation Labels:** Around 2,000 (20%).
+
+## Repository Overview
+
+Let’s take a look at some of the key files in this repository and understand their purpose in the project:
+
+1. `Untitled1.ipynb:` In this notebook, we initially experimented with **Generative Adversarial Networks (GANs)** for image defogging. The goal was to use it to enhance visibility in foggy conditions, but we didn't get the results we were hoping for. While the model showed some potential, it didn’t quite meet our expectations in terms of clarity and performance, so we moved on to other approaches for better results.
+
+2. `Untitled2.ipynb:` In this notebook, we trained the YOLOv8n model for object detection. The focus was on detecting maritime objects like ships, buoys, and obstacles in real-time video feeds. After some tuning and training, we were able to get the model to recognize these objects with reasonable accuracy, which helped us move closer to the goal of safer navigation in challenging conditions.
+
+3. `Untitled.ipynb & Untitled3.ipynb:` In this notebook, we focused on training the dehazing (or defogging) model. The aim was to improve the clarity of foggy and hazy images, making it easier for the object detection model to perform accurately.
+
+4. `final_saved_model.h5:` This is the final trained model that combines both the defogging and object detection models into a single workflow. After refining the individual models, we integrated them to create a complete system capable of both enhancing image clarity and detecting objects in real-time. This model is the culmination of the work done in the previous notebooks and is ready for use in the project’s real-time application.
+
+
+
+
+
+  
 
 
