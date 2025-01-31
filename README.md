@@ -7,7 +7,7 @@ The system processes real-time video feeds to ensure safer navigation for vessel
 
 >### Problem
 
-In maritime navigation, poor visibility due to fog, haze, or low-light conditions significantly increases the risk of accidents, collisions, and operational inefficiencies. This lack of clarity hinders timely decision-making and compromises safety, especially in congested or hazardous waters.
+In maritime navigation, poor/weak visibility due to fog, haze, or low-light conditions significantly increases the risk of accidents, collisions, and operational inefficiencies. This lack of clarity hinders timely decision-making and compromises safety, especially in congested or hazardous waters.
 
 >### Solution
 
